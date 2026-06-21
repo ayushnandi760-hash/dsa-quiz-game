@@ -1,0 +1,802 @@
+[
+  {
+    "question": "What is the time complexity of a linear search?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "answer": "O(n)",
+    "explanation": "Linear search checks each element one by one, so in the worst case it takes O(n) time.",
+    "topic": "Linear Search",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which data structure uses LIFO (Last In First Out) principle?",
+    "options": ["Queue", "Stack", "Linked List", "Tree"],
+    "answer": "Stack",
+    "explanation": "A Stack follows LIFO, where the last element added is the first one to be removed.",
+    "topic": "Stack",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the worst-case time complexity of quicksort?",
+    "options": ["O(n log n)", "O(n)", "O(n^2)", "O(1)"],
+    "answer": "O(n^2)",
+    "explanation": "When the pivot is the smallest or largest element, quicksort takes O(n^2) time.",
+    "topic": "Basic Sorting",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which of the following sorting algorithms is inherently stable?",
+    "options": ["Merge Sort", "Quick Sort", "Heap Sort", "Selection Sort"],
+    "answer": "Merge Sort",
+    "explanation": "Merge sort maintains the relative order of equal elements.",
+    "topic": "Basic Sorting",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the time complexity to access an element in an array?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+    "answer": "O(1)",
+    "explanation": "Arrays allow random access in constant time using indices.",
+    "topic": "Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which method is used to find the length of a string in Java?",
+    "options": ["length", "size()", "length()", "getSize()"],
+    "answer": "length()",
+    "explanation": "In Java, length() is a method of the String class used to get the number of characters.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What does a Java Collection framework provide?",
+    "options": ["Interfaces", "Classes", "Algorithms", "All of the above"],
+    "answer": "All of the above",
+    "explanation": "The Collection framework provides interfaces, concrete classes, and algorithms like sorting.",
+    "topic": "Java Collections Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which base condition is essential to prevent infinite recursion?",
+    "options": ["Loop condition", "Base case", "Recursive step", "Return statement"],
+    "answer": "Base case",
+    "explanation": "A base case stops the recursive calls, preventing StackOverflowError.",
+    "topic": "Recursion Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the time complexity of binary search?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+    "answer": "O(log n)",
+    "explanation": "Binary search halves the search space at each step, resulting in logarithmic time complexity.",
+    "topic": "Binary Search Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which of these is not a linear data structure?",
+    "options": ["Array", "Linked List", "Tree", "Stack"],
+    "answer": "Tree",
+    "explanation": "Trees are hierarchical data structures, while the rest are linear.",
+    "topic": "Trees",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the default capacity of an ArrayList in Java?",
+    "options": ["10", "16", "0", "20"],
+    "answer": "10",
+    "explanation": "An ArrayList is initialized with a default capacity of 10 when instantiated without arguments.",
+    "topic": "Java Collections Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a palindrome?",
+    "options": ["A string that reads the same forwards and backwards", "A string with unique characters", "A string with only numbers", "A string sorted alphabetically"],
+    "answer": "A string that reads the same forwards and backwards",
+    "explanation": "A palindrome is symmetrical, e.g., 'madam' or 'racecar'.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The time complexity of appending an element to an ArrayList (amortized) is?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+    "answer": "O(1)",
+    "explanation": "Adding to the end takes O(1) amortized time, despite occasional resizing.",
+    "topic": "Time Complexity",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which traversal prints the tree in ascending order for a BST?",
+    "options": ["Preorder", "Postorder", "Inorder", "Level order"],
+    "answer": "Inorder",
+    "explanation": "Inorder traversal of a Binary Search Tree processes nodes in ascending sorted order.",
+    "topic": "Trees",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which operator is used to calculate the remainder in Java?",
+    "options": ["/", "*", "%", "//"],
+    "answer": "%",
+    "explanation": "The modulo operator (%) returns the remainder of a division.",
+    "topic": "Mathematics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "How do you find the GCD of two numbers a and b efficiently?",
+    "options": ["Linear Search", "Binary Search", "Euclidean Algorithm", "Factorization"],
+    "answer": "Euclidean Algorithm",
+    "explanation": "The Euclidean algorithm finds GCD efficiently using modulo operations.",
+    "topic": "Mathematics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the factorial of 5?",
+    "options": ["120", "24", "60", "100"],
+    "answer": "120",
+    "explanation": "5! = 5 x 4 x 3 x 2 x 1 = 120.",
+    "topic": "Mathematics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "In Java, strings are:",
+    "options": ["Mutable", "Immutable", "Primitives", "Pointers"],
+    "answer": "Immutable",
+    "explanation": "String objects in Java cannot be modified after they are created.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which is the correct formula to calculate mid to avoid integer overflow?",
+    "options": ["(low + high) / 2", "low + (high - low) / 2", "high - (low + high) / 2", "low * high / 2"],
+    "answer": "low + (high - low) / 2",
+    "explanation": "This prevents overflow when low and high are very large integers.",
+    "topic": "Binary Search Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The best-case time complexity of bubble sort is:",
+    "options": ["O(n log n)", "O(n^2)", "O(n)", "O(1)"],
+    "answer": "O(n)",
+    "explanation": "If the array is already sorted, an optimized bubble sort can complete in O(n) time.",
+    "topic": "Basic Sorting",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "How is a graph usually represented in memory?",
+    "options": ["Adjacency Matrix", "Adjacency List", "Both", "None of the above"],
+    "answer": "Both",
+    "explanation": "Graphs can be represented using either an Adjacency Matrix or an Adjacency List.",
+    "topic": "Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What data structure is used to reverse a string?",
+    "options": ["Queue", "Stack", "Tree", "Graph"],
+    "answer": "Stack",
+    "explanation": "A stack pops elements in LIFO order, effectively reversing the string.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A complete binary tree with n nodes has a height of:",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+    "answer": "O(log n)",
+    "explanation": "A complete binary tree's height is bounded by log base 2 of n.",
+    "topic": "Trees",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A HashSet in Java does not allow:",
+    "options": ["Null values", "Duplicate values", "String values", "Integer values"],
+    "answer": "Duplicate values",
+    "explanation": "A Set by definition can only hold unique elements.",
+    "topic": "Java Collections Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "In Java, what does the 'final' keyword signify for a variable?",
+    "options": ["It is a constant", "It is volatile", "It can be overridden", "It is abstract"],
+    "answer": "It is a constant",
+    "explanation": "A final variable's value cannot be changed once initialized.",
+    "topic": "Java Collections Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which algorithm is best suited for finding the shortest path in an unweighted graph?",
+    "options": ["DFS", "BFS", "Dijkstra", "Bellman-Ford"],
+    "answer": "BFS",
+    "explanation": "Breadth-First Search finds the shortest path in unweighted graphs in O(V+E) time.",
+    "topic": "Basic Sorting",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "An anagram is:",
+    "options": ["A word reversed", "A word formed by rearranging letters of another", "A word with repeating letters", "A word of prime length"],
+    "answer": "A word formed by rearranging letters of another",
+    "explanation": "E.g., 'listen' and 'silent' are anagrams.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which data type is used to represent single characters in Java?",
+    "options": ["String", "char", "Character", "byte"],
+    "answer": "char",
+    "explanation": "The 'char' primitive data type holds a single 16-bit Unicode character.",
+    "topic": "Strings",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is a characteristic of a greedy algorithm?",
+    "options": ["Explores all paths", "Makes local optimal choices", "Backtracks when wrong", "Requires a matrix"],
+    "answer": "Makes local optimal choices",
+    "explanation": "Greedy algorithms build up a solution piece by piece, picking the most beneficial choice at the moment.",
+    "topic": "Arrays",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What happens if a queue is full and you try to insert an element?",
+    "options": ["Underflow", "Overflow", "Exception", "Nothing"],
+    "answer": "Overflow",
+    "explanation": "Trying to insert into a full queue leads to an overflow condition.",
+    "topic": "Queue",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the worst-case space complexity of recursive binary search?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "answer": "O(log n)",
+    "explanation": "The recursive call stack can grow up to log n deep.",
+    "topic": "Recursion Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which data structure implements FIFO?",
+    "options": ["Stack", "Queue", "Heap", "Tree"],
+    "answer": "Queue",
+    "explanation": "Queue uses First In First Out for insertion and deletion.",
+    "topic": "Queue",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "In Java, which collection class allows fast insertion at both ends?",
+    "options": ["ArrayList", "LinkedList", "Vector", "HashSet"],
+    "answer": "LinkedList",
+    "explanation": "LinkedList provides O(1) time complexity for adding elements at the head or tail.",
+    "topic": "Java Collections Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which traversal order visits Root, Left, Right?",
+    "options": ["Inorder", "Postorder", "Preorder", "Level order"],
+    "answer": "Preorder",
+    "explanation": "Preorder traversal processes the current node first, then children.",
+    "topic": "Trees",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What defines a prime number?",
+    "options": ["Divisible by 2", "Divisible by 1 and itself", "Even number", "Odd number"],
+    "answer": "Divisible by 1 and itself",
+    "explanation": "Prime numbers are greater than 1 and have only two divisors: 1 and the number itself.",
+    "topic": "Mathematics",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the time complexity of searching an element in a HashMap?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": "O(1)",
+    "explanation": "HashMaps provide average constant time O(1) for search operations.",
+    "topic": "HashMap",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How do you detect a loop in a Linked List?",
+    "options": ["Binary Search", "Floyd's Cycle-Finding Algorithm", "Dijkstra's Algorithm", "Linear Search"],
+    "answer": "Floyd's Cycle-Finding Algorithm",
+    "explanation": "Also known as the slow and fast pointer approach, it detects cycles efficiently in O(n) time and O(1) space.",
+    "topic": "Linked List",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "In a Binary Search Tree (BST), the left child is always:",
+    "options": ["Greater than the parent", "Less than the parent", "Equal to the parent", "Null"],
+    "answer": "Less than the parent",
+    "explanation": "BST property requires the left child's value to be strictly less than the parent's.",
+    "topic": "BST",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What algorithm is used to find the maximum sum subarray?",
+    "options": ["Kadane's Algorithm", "Kruskal's Algorithm", "Prim's Algorithm", "Dijkstra's Algorithm"],
+    "answer": "Kadane's Algorithm",
+    "explanation": "Kadane's Algorithm finds the contiguous subarray with the largest sum in O(n) time.",
+    "topic": "Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which of the following is an application of a Stack?",
+    "options": ["Breadth First Search", "Evaluating Postfix Expression", "Job Scheduling", "Shortest Path"],
+    "answer": "Evaluating Postfix Expression",
+    "explanation": "Stacks are heavily used in expression parsing and evaluation.",
+    "topic": "Stack",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What technique is best for finding a subarray of a given size with a target sum?",
+    "options": ["Binary Search", "Two Pointers", "Sliding Window", "Merge Sort"],
+    "answer": "Sliding Window",
+    "explanation": "The sliding window technique efficiently tracks a subset of data over a linear structure.",
+    "topic": "Sliding Window",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the internal data structure used by HashSet in Java?",
+    "options": ["Array", "Linked List", "HashMap", "Tree"],
+    "answer": "HashMap",
+    "explanation": "A HashSet is backed by a HashMap where values are mapped to a dummy object.",
+    "topic": "HashSet",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Prefix sum arrays are primarily used to optimize:",
+    "options": ["Sorting", "Range sum queries", "Finding primes", "Tree traversal"],
+    "answer": "Range sum queries",
+    "explanation": "Prefix sum allows O(1) time complexity for calculating the sum of elements in a range.",
+    "topic": "Prefix Sum",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does a balanced binary tree guarantee?",
+    "options": ["O(1) search", "O(log n) search", "O(n) search", "O(n log n) search"],
+    "answer": "O(log n) search",
+    "explanation": "Balancing ensures the tree depth stays O(log n), keeping operations fast.",
+    "topic": "BST",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "In Two Pointers approach for a sorted array, if sum is greater than target, you:",
+    "options": ["Increment left pointer", "Decrement right pointer", "Reset both", "Stop"],
+    "answer": "Decrement right pointer",
+    "explanation": "Since the array is sorted, moving the right pointer leftward decreases the sum.",
+    "topic": "Two Pointers",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the height of an empty tree?",
+    "options": ["1", "0", "-1", "undefined"],
+    "answer": "-1",
+    "explanation": "By convention, an empty tree has a height of -1 (or 0 depending on definition, but usually -1 relative to edges).",
+    "topic": "Trees",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which of these problems can be solved using the Greedy approach?",
+    "options": ["N-Queens", "Traveling Salesman", "Fractional Knapsack", "0/1 Knapsack"],
+    "answer": "Fractional Knapsack",
+    "explanation": "Fractional knapsack can be solved optimally by taking items with max value-to-weight ratio.",
+    "topic": "Greedy Basics",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How do you reverse a Linked List?",
+    "options": ["Using three pointers (prev, curr, next)", "Using a Queue", "Using Hashset", "Using Bubble Sort"],
+    "answer": "Using three pointers (prev, curr, next)",
+    "explanation": "You iterate through the list changing the 'next' pointer of each node to its 'prev' node.",
+    "topic": "Linked List",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the advantage of a Doubly Linked List over a Singly Linked List?",
+    "options": ["Takes less memory", "Can traverse in both directions", "O(1) array access", "Has no null pointers"],
+    "answer": "Can traverse in both directions",
+    "explanation": "DLL nodes hold pointers to both previous and next nodes.",
+    "topic": "Linked List",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What happens if two keys map to the same bucket in a HashMap?",
+    "options": ["Exception is thrown", "Collision occurs", "First key is deleted", "HashMap resizes"],
+    "answer": "Collision occurs",
+    "explanation": "This is handled using techniques like chaining (Linked List/Tree) or open addressing.",
+    "topic": "HashMap",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which algorithm is used for finding the middle of a Linked List in one pass?",
+    "options": ["Binary Search", "Two Pointers (Slow and Fast)", "Sliding Window", "Hashing"],
+    "answer": "Two Pointers (Slow and Fast)",
+    "explanation": "The fast pointer moves two steps while the slow pointer moves one. When fast reaches the end, slow is at the middle.",
+    "topic": "Two Pointers",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a 'Queue' implemented using two 'Stacks'?",
+    "options": ["O(1) enqueue, O(1) dequeue", "Amortized O(1) dequeue", "O(n) enqueue, O(n) dequeue", "Cannot be implemented"],
+    "answer": "Amortized O(1) dequeue",
+    "explanation": "Push to stack1, and for pop, transfer to stack2 if empty. This makes pop amortized O(1).",
+    "topic": "Queue",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A binary tree is a strictly binary tree if:",
+    "options": ["Every node has exactly two children or none", "It is perfectly balanced", "All leaves are at same level", "It is a BST"],
+    "answer": "Every node has exactly two children or none",
+    "explanation": "Also called a full binary tree.",
+    "topic": "Trees",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which collection guarantees insertion order?",
+    "options": ["HashSet", "TreeSet", "LinkedHashSet", "HashMap"],
+    "answer": "LinkedHashSet",
+    "explanation": "LinkedHashSet maintains a doubly linked list across its elements to keep insertion order.",
+    "topic": "HashSet",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the time complexity to find an element in a balanced BST?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+    "answer": "O(log n)",
+    "explanation": "Balanced trees keep their height to log n, ensuring quick lookups.",
+    "topic": "BST",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The Sliding Window technique is used mainly for problems involving:",
+    "options": ["Trees", "Graphs", "Contiguous Subarrays", "Sorting"],
+    "answer": "Contiguous Subarrays",
+    "explanation": "It's an optimization for problems dealing with continuous chunks of data.",
+    "topic": "Sliding Window",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the main limitation of an array?",
+    "options": ["Fixed size", "Slow access", "Cannot hold objects", "Dynamic sizing"],
+    "answer": "Fixed size",
+    "explanation": "Traditional arrays have a fixed memory footprint allocated at creation.",
+    "topic": "Arrays",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does a Priority Queue do?",
+    "options": ["FIFO access", "LIFO access", "Access by priority (e.g. min/max)", "Random access"],
+    "answer": "Access by priority (e.g. min/max)",
+    "explanation": "A priority queue dequeues elements based on their priority, often implemented via Heaps.",
+    "topic": "Queue",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "To solve 'Activity Selection Problem', which paradigm is best?",
+    "options": ["Dynamic Programming", "Greedy", "Backtracking", "Divide and Conquer"],
+    "answer": "Greedy",
+    "explanation": "Sorting activities by end time and greedily picking non-overlapping ones gives the optimal solution.",
+    "topic": "Greedy Basics",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is a characteristic of a Deque?",
+    "options": ["Insert front only", "Insert back only", "Insert/Remove from both ends", "No removals allowed"],
+    "answer": "Insert/Remove from both ends",
+    "explanation": "Double Ended Queue (Deque) allows fast operations at both the head and tail.",
+    "topic": "Queue",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "In a 2D array matrix prefix sum, how do you find the sum of a subgrid?",
+    "options": ["Linear addition", "Inclusion-Exclusion Principle", "Binary search", "Two pointers"],
+    "answer": "Inclusion-Exclusion Principle",
+    "explanation": "Uses sum(x2,y2) - sum(x1-1,y2) - sum(x2,y1-1) + sum(x1-1,y1-1).",
+    "topic": "Prefix Sum",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How to verify if a tree is a valid BST?",
+    "options": ["Inorder traversal is sorted", "Postorder traversal is sorted", "Check root only", "Preorder traversal is sorted"],
+    "answer": "Inorder traversal is sorted",
+    "explanation": "An inorder traversal of a valid BST will always yield a strictly increasing sequence.",
+    "topic": "BST",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "In what scenario is Binary Search used on the answer space?",
+    "options": ["When answer is monotonic (increasing/decreasing)", "When array is random", "For shortest paths", "For string matching"],
+    "answer": "When answer is monotonic (increasing/decreasing)",
+    "explanation": "If a condition holds true for X and all values >X, we can binary search the answer.",
+    "topic": "Binary Search",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the worst case time complexity of insertion in a typical HashMap?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "answer": "O(n)",
+    "explanation": "If all elements hash to the same bucket and no tree binning is used, it degrades to a linked list.",
+    "topic": "HashMap",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A Linked List requires O(1) time for:",
+    "options": ["Searching", "Random access", "Insertion at head", "Sorting"],
+    "answer": "Insertion at head",
+    "explanation": "Inserting an element at the beginning requires simply updating the head pointer.",
+    "topic": "Linked List",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If we push 1, 2, 3 into a Stack and then pop twice, the top element is:",
+    "options": ["1", "2", "3", "None"],
+    "answer": "1",
+    "explanation": "Stack is LIFO. Top becomes 3, then 2. Popping twice removes 3 and 2, leaving 1.",
+    "topic": "Stack",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How do you check if a graph is bipartite?",
+    "options": ["Dijkstra", "Floyd-Warshall", "Graph Coloring using BFS/DFS", "Kruskal"],
+    "answer": "Graph Coloring using BFS/DFS",
+    "explanation": "Trying to color the graph with 2 colors such that no two adjacent vertices have the same color.",
+    "topic": "Graphs",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the primary feature of a Trie?",
+    "options": ["Stores numbers", "Retrieval in O(1)", "Fast prefix matching for strings", "Maintains BST property"],
+    "answer": "Fast prefix matching for strings",
+    "explanation": "A Trie (prefix tree) stores characters of strings as nodes, enabling fast prefix queries.",
+    "topic": "Trees",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which traversal is used to delete the entire tree efficiently?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+    "answer": "Postorder",
+    "explanation": "Postorder visits children before the parent, making it safe to delete children then the parent.",
+    "topic": "Trees",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "To find common elements between two unsorted arrays, we use:",
+    "options": ["HashMap / HashSet", "Merge Sort", "Two Pointers", "Dijkstra"],
+    "answer": "HashMap / HashSet",
+    "explanation": "Storing one array in a HashSet and iterating the other gives O(n+m) time.",
+    "topic": "HashSet",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the core idea of Dynamic Programming?",
+    "options": ["Random guessing", "Overlapping subproblems and Optimal Substructure", "Sorting arrays", "Greedy choices"],
+    "answer": "Overlapping subproblems and Optimal Substructure",
+    "explanation": "DP stores results of overlapping subproblems to avoid redundant calculations.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which algorithm solves the All-Pairs Shortest Path problem?",
+    "options": ["Dijkstra's", "Bellman-Ford", "Floyd-Warshall", "Prim's"],
+    "answer": "Floyd-Warshall",
+    "explanation": "Floyd-Warshall runs in O(V^3) and finds shortest paths between all pairs of vertices.",
+    "topic": "Floyd Warshall",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the time complexity of Dijkstra's algorithm using a Min-Heap?",
+    "options": ["O(V + E)", "O(E log V)", "O(V^2)", "O(E^2)"],
+    "answer": "O(E log V)",
+    "explanation": "Using a Min-Priority Queue (Heap) optimizes the extraction of the minimum distance vertex.",
+    "topic": "Dijkstra",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In Disjoint Set Union (DSU), what does Path Compression do?",
+    "options": ["Reduces space", "Flattens the tree structure", "Sorts the edges", "Removes cycles"],
+    "answer": "Flattens the tree structure",
+    "explanation": "It makes nodes point directly to the root, optimizing future 'find' operations to near O(1).",
+    "topic": "Union Find",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which problem uses the 'Backtracking' algorithmic paradigm?",
+    "options": ["Binary Search", "N-Queens", "Merge Sort", "Dijkstra's"],
+    "answer": "N-Queens",
+    "explanation": "Backtracking systematically explores possibilities and abandons paths that violate constraints.",
+    "topic": "Backtracking",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What data structure is optimal for Range Minimum Queries (RMQ) with point updates?",
+    "options": ["Array", "Linked List", "Segment Tree", "HashMap"],
+    "answer": "Segment Tree",
+    "explanation": "Segment Trees allow O(log n) updates and O(log n) range queries.",
+    "topic": "Segment Tree",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which algorithm is used to find Strongly Connected Components in a directed graph?",
+    "options": ["Kruskal's", "Kosaraju's", "Dijkstra's", "Prim's"],
+    "answer": "Kosaraju's",
+    "explanation": "Kosaraju's uses two passes of DFS (one on original, one on reversed graph).",
+    "topic": "DFS",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In DP, what is 'Memoization'?",
+    "options": ["Bottom-up approach", "Top-down approach with caching", "Greedy approach", "Iterative DP"],
+    "answer": "Top-down approach with caching",
+    "explanation": "Memoization saves the results of recursive calls in a lookup table to reuse later.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which pattern is best for the 'Longest Common Subsequence' problem?",
+    "options": ["Two Pointers", "2D Dynamic Programming", "Backtracking", "Sliding Window"],
+    "answer": "2D Dynamic Programming",
+    "explanation": "A 2D DP table is used to track matches between characters of two strings.",
+    "topic": "Advanced DP",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Bellman-Ford algorithm is used to detect:",
+    "options": ["Eulerian paths", "Negative weight cycles", "Minimum Spanning Tree", "Bipartite graphs"],
+    "answer": "Negative weight cycles",
+    "explanation": "Unlike Dijkstra, Bellman-Ford works with negative edges and can detect negative cycles.",
+    "topic": "Graphs",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the time complexity of searching a word of length L in a Trie?",
+    "options": ["O(N)", "O(log N)", "O(L)", "O(L * N)"],
+    "answer": "O(L)",
+    "explanation": "Searching in a Trie depends only on the length of the string, not the number of strings stored.",
+    "topic": "Trie",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The Minimum Spanning Tree (MST) of a graph with unique edge weights is:",
+    "options": ["Not unique", "Always unique", "A disjoint set", "A bipartite graph"],
+    "answer": "Always unique",
+    "explanation": "If all edge weights are distinct, there is only one unique MST.",
+    "topic": "Greedy Basics",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which of these is NOT a property of a topological sort?",
+    "options": ["Works on Directed Acyclic Graphs (DAG)", "Order of execution of dependencies", "Uses DFS or BFS (Kahn's)", "Works on graphs with cycles"],
+    "answer": "Works on graphs with cycles",
+    "explanation": "Topological sort is strictly for Directed Acyclic Graphs (DAGs).",
+    "topic": "Graphs",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In the 0/1 Knapsack problem, why does the Greedy approach fail?",
+    "options": ["It is too slow", "It takes fractions of items", "It doesn't guarantee the optimal global max value", "It requires floating point operations"],
+    "answer": "It doesn't guarantee the optimal global max value",
+    "explanation": "Because items cannot be broken, local maximums (value/weight ratio) don't always yield the global maximum.",
+    "topic": "Advanced Greedy",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Fenwick Tree (Binary Indexed Tree) is an alternative to:",
+    "options": ["HashMaps", "Segment Trees", "Tries", "Linked Lists"],
+    "answer": "Segment Trees",
+    "explanation": "BITs compute prefix sums and handle updates in O(log n), similar to Segment Trees but with less space.",
+    "topic": "Segment Tree",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "To find articulation points in a graph, we use a modified version of:",
+    "options": ["BFS", "DFS", "Dijkstra", "Kruskal"],
+    "answer": "DFS",
+    "explanation": "Tarjan's or Hopcroft-Tarjan algorithms use DFS tracking 'discovery times' and 'lowest reachable'.",
+    "topic": "DFS",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is State Compression DP used for?",
+    "options": ["Compressing images", "Using bitmasks to represent states of subsets", "String compression", "Database indexing"],
+    "answer": "Using bitmasks to represent states of subsets",
+    "explanation": "Bitmask DP is used when N is very small (e.g., N<=20) to track combinations compactly.",
+    "topic": "Advanced DP",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What algorithm solves the Word Ladder problem efficiently?",
+    "options": ["DFS", "BFS", "Dijkstra", "A*"],
+    "answer": "BFS",
+    "explanation": "Since we need the shortest transformation sequence, BFS explores level by level (shortest path).",
+    "topic": "BFS",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "How do you implement a LRU Cache?",
+    "options": ["Array", "HashMap + Doubly Linked List", "Queue", "Stack"],
+    "answer": "HashMap + Doubly Linked List",
+    "explanation": "HashMap provides O(1) access, and DLL provides O(1) removal/insertion for tracking least recently used items.",
+    "topic": "Advanced DP",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The time complexity of building a Segment Tree from an array is:",
+    "options": ["O(N log N)", "O(log N)", "O(N)", "O(N^2)"],
+    "answer": "O(N)",
+    "explanation": "There are 2N-1 nodes in a segment tree, and we visit each node once during construction.",
+    "topic": "Segment Tree",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In Graph Theory, what is a Eulerian circuit?",
+    "options": ["Visits every vertex once", "Visits every edge exactly once and returns to start", "Shortest path", "A cycle in a tree"],
+    "answer": "Visits every edge exactly once and returns to start",
+    "explanation": "A graph has a Eulerian circuit if all vertices have an even degree.",
+    "topic": "Graphs",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the 'Matrix Chain Multiplication' problem solved using?",
+    "options": ["Greedy", "Divide and Conquer", "Dynamic Programming", "Backtracking"],
+    "answer": "Dynamic Programming",
+    "explanation": "It determines the most efficient way to multiply matrices by exploring subproblems.",
+    "topic": "Advanced DP",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is an Aho-Corasick automaton used for?",
+    "options": ["Graph traversal", "Multiple pattern string matching", "Sorting", "Finding MST"],
+    "answer": "Multiple pattern string matching",
+    "explanation": "It builds a Trie with failure links to match multiple patterns simultaneously in linear time.",
+    "topic": "Trie",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which algorithm is commonly used for Network Flow problems?",
+    "options": ["Ford-Fulkerson", "Dijkstra", "Bellman-Ford", "Floyd-Warshall"],
+    "answer": "Ford-Fulkerson",
+    "explanation": "Calculates the maximum flow in a flow network.",
+    "topic": "Graphs",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In a Trie, how do you handle deletions effectively without leaking memory?",
+    "options": ["Mark as unvisited", "Delete recursively from bottom if node is empty and not end of another word", "Set to null", "Clear the entire tree"],
+    "answer": "Delete recursively from bottom if node is empty and not end of another word",
+    "explanation": "This cleans up unnecessary nodes that were only used for the deleted word.",
+    "topic": "Trie",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "To efficiently find the lowest common ancestor (LCA) in a tree, what preprocessing technique is used?",
+    "options": ["Sorting", "Binary Lifting", "Hashing", "Greedy approach"],
+    "answer": "Binary Lifting",
+    "explanation": "Binary lifting precomputes ancestors at powers of 2, allowing O(log N) LCA queries.",
+    "topic": "Trees",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In Backtracking, what is 'pruning'?",
+    "options": ["Cutting tree branches", "Removing elements from array", "Ignoring paths that cannot lead to a valid solution", "Removing duplicates"],
+    "answer": "Ignoring paths that cannot lead to a valid solution",
+    "explanation": "Pruning reduces the search space by eliminating invalid paths early.",
+    "topic": "Backtracking",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the time complexity of the Union operation in DSU with path compression and union by rank?",
+    "options": ["O(log N)", "O(1)", "O(alpha(N))", "O(N)"],
+    "answer": "O(alpha(N))",
+    "explanation": "The Inverse Ackermann function alpha(N) is practically constant for all observable values of N.",
+    "topic": "Union Find",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The Longest Increasing Subsequence (LIS) problem can be solved in O(N log N) using:",
+    "options": ["Backtracking", "2D DP", "Binary Search + DP", "Segment Tree"],
+    "answer": "Binary Search + DP",
+    "explanation": "Using an array to store the smallest tail of all increasing subsequences and binary searching it.",
+    "topic": "Advanced DP",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In advanced greedy problems, what data structure is frequently used to make the best local choice dynamically?",
+    "options": ["Stack", "Queue", "Priority Queue (Heap)", "Linked List"],
+    "answer": "Priority Queue (Heap)",
+    "explanation": "Heaps dynamically maintain the optimal element (min or max) as elements are added/removed.",
+    "topic": "Advanced Greedy",
+    "difficulty": "Hard"
+  }
+]
