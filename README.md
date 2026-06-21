@@ -1,45 +1,110 @@
-# Professional DSA Quiz Game
+# 🎓 Professional DSA Quiz Game
 
-A robust, Java-based Desktop Application for students preparing for coding interviews, aptitude tests, and placement exams. This game features a clean Graphical User Interface (GUI) built with Java Swing and allows users to practice Data Structures and Algorithms questions across different difficulty levels.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/Java_Swing-007396?style=for-the-badge&logo=java&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 
-## Features
+A highly robust, gamified Desktop Application built in **Pure Java** to help computer science students, graduates, and professionals prepare for coding interviews and placement exams (like TCS NQT, Infosys, Amazon, Google, etc.). 
 
-- **Difficulty Selection:** Choose between Easy, Medium, and Hard difficulty levels.
-- **Random Question Selection:** Each round consists of 10 randomly selected, unique questions from the question bank.
-- **Timer:** A 30-second countdown timer for each question to simulate a real exam environment.
-- **Score Tracking:** Earn 10 points for every correct answer.
-- **Leaderboard:** Tracks and displays the top 10 high scores across all sessions.
-- **Replay Option:** Allows users to play again without restarting the application.
-- **Detailed Explanations:** Get immediate feedback and a detailed explanation after answering each question.
-- **Custom JSON Parser:** Uses a built-in, lightweight JSON parser (No external dependencies like Maven/Gradle or Gson required).
+By simulating a timed, high-pressure environment with diverse Data Structures and Algorithms (DSA) topics, this game ensures you are well-prepared for any technical assessment.
 
-## Architecture
+---
 
-The project follows clean Object-Oriented Programming (OOP) principles with the following core classes:
-- `Question`: POJO representing a single question.
-- `QuestionBank`: Handles loading and parsing questions from the JSON file.
-- `QuizManager`: Manages the logic, round generation, and answer validation.
-- `TimerManager`: A robust wrapper around `javax.swing.Timer` to handle question countdowns.
-- `ScoreManager`: Tracks current score and integrates with the leaderboard.
-- `LeaderboardManager`: Handles reading/writing high scores to `leaderboard.txt`.
-- `Main`: The entry point and GUI controller managing the `CardLayout`.
+## ✨ Key Features
 
-## Prerequisites
+- **🧠 Tiered Difficulty Levels**: Choose from **Easy**, **Medium**, or **Hard** modes based on your preparation level.
+- **⏱️ Timed Rounds**: Each question comes with a strict **30-second countdown timer** to test your speed and accuracy.
+- **🔀 Dynamic Rounds**: Every round consists of 10 completely random and unique questions pulled from a local JSON database.
+- **📈 Global Leaderboard**: Track your progress over time! The game saves and displays the Top 10 highest scores locally.
+- **💡 Instant Explanations**: Immediate feedback is provided after answering. Learn *why* an answer is correct with detailed, concept-focused explanations.
+- **🚫 Zero Dependencies**: Built completely from scratch! Uses a highly optimized, custom-built JSON parser to process the question bank, meaning **no Maven, no Gradle, and no external libraries** are required.
 
-- Java Development Kit (JDK) 8 or higher.
+---
 
-## How to Run
+## 🛠️ Tech Stack & Architecture
 
-1. Open your terminal or command prompt.
-2. Navigate to the project root directory (`e:\Quiz Game`).
-3. Compile the Java files:
+- **Language:** Java (JDK 8 or higher)
+- **GUI Framework:** Java Swing (`JFrame`, `CardLayout`, `Timer`)
+- **Data Storage:** JSON (`questions.json`) for dynamic question pooling. File I/O (`leaderboard.txt`) for persistent score tracking.
+- **Design Pattern:** Modular Object-Oriented Programming (OOP).
+
+### Core Components
+| Class Name | Responsibility |
+| :--- | :--- |
+| `Main.java` | The application entry point and main GUI Controller using `CardLayout`. |
+| `Question.java` | A POJO model representing a single quiz question and its attributes. |
+| `QuestionBank.java` | Loads `questions.json` using a custom lightweight JSON parser and shuffles questions dynamically. |
+| `QuizManager.java` | Contains the core game loop, tracks current progress, and validates answers. |
+| `TimerManager.java` | Encapsulates the `javax.swing.Timer` to safely handle countdowns on the Event Dispatch Thread (EDT). |
+| `ScoreManager.java` | Manages point calculation during an active round. |
+| `LeaderboardManager.java`| Reads from and writes to `leaderboard.txt` to persist high scores across sessions. |
+
+---
+
+## 📂 Project Structure
+
+```text
+📦 Quiz Game
+ ┣ 📂 src
+ ┃ ┗ 📂 com
+ ┃   ┗ 📂 quizgame
+ ┃     ┣ 📜 LeaderboardManager.java
+ ┃     ┣ 📜 Main.java
+ ┃     ┣ 📜 Question.java
+ ┃     ┣ 📜 QuestionBank.java
+ ┃     ┣ 📜 QuizManager.java
+ ┃     ┣ 📜 ScoreManager.java
+ ┃     ┗ 📜 TimerManager.java
+ ┣ 📜 questions.json        # The 100-question DSA database
+ ┣ 📜 leaderboard.txt       # Auto-generated file tracking high scores
+ ┣ 📜 Project_Report.md     # Detailed documentation for academic submission
+ ┗ 📜 README.md             # This documentation file
+```
+
+---
+
+## 🚀 How to Install and Run
+
+Since this project requires absolutely no external dependencies, running it is incredibly straightforward.
+
+### Prerequisites
+- Ensure you have **Java Development Kit (JDK) 8+** installed on your machine.
+- Verify your installation by running `java -version` and `javac -version` in your terminal.
+
+### Compilation and Execution
+1. **Clone or Download** this repository and navigate to the root directory.
+   ```bash
+   cd "path/to/Quiz Game"
+   ```
+2. **Create a directory** to hold the compiled bytecode (if it doesn't already exist).
+   ```bash
+   mkdir bin
+   ```
+3. **Compile the Java source files** into the `bin` directory.
    ```bash
    javac -d bin src/com/quizgame/*.java
    ```
-4. Run the application (Make sure you are in the directory containing `questions.json`):
+4. **Run the Application**. Ensure you are running this command from the root folder so the app can locate `questions.json`.
    ```bash
    java -cp bin com.quizgame.Main
    ```
 
-## Included Question Bank
-The `questions.json` contains a comprehensive set of interview-style questions mimicking patterns from TCS NQT, Infosys, Wipro, Amazon, Google, and Microsoft. Topics cover Arrays, Strings, Binary Search, Trees, Graphs, DP, Sliding Window, and more!
+---
+
+## 🎮 How to Play
+1. **Start Screen:** Select your desired difficulty (Easy, Medium, Hard) and click **Start Quiz**.
+2. **Gameplay:** Read the question carefully. You have 30 seconds to click the correct option and hit **Submit Answer**. 
+3. **Feedback:** After submitting, the correct answer turns Green. If you were wrong, your choice turns Red. Read the provided explanation at the bottom.
+4. **Next Question:** Click **Next Question** to proceed.
+5. **Results:** After 10 questions, your final score is displayed. Your score will automatically be saved to the leaderboard if it is among the Top 10.
+6. **Leaderboard:** Access the Leaderboard from the Start Screen or Results Screen to see high scores.
+
+---
+
+## 🚀 Future Enhancements
+- Database integration (SQLite or MySQL) to replace local JSON and TXT files.
+- Dedicated user login system for individual score tracking.
+- Web-based version using Spring Boot and React.
+
+---
+*Developed as a comprehensive project demonstrating advanced Java OOP, UI design, and algorithm implementations.*
